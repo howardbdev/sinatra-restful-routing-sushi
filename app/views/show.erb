@@ -1,0 +1,9 @@
+<p>Sushi Show</p>
+
+<h2><%= @sushi.name %></h2>
+<h2><%= @sushi.description %></h2>
+
+<form class="" action="/sushis/<%= @sushi.id %>" method="post">
+  <input name="_method" type="hidden" value="delete" />
+  <input type="submit" name="" value="delete this sushi">
+</form>

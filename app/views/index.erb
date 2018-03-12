@@ -1,1 +1,8 @@
 <h1>Hello from index.erb!</h1>
+
+<ul>
+<% @sushis.each do |roll| %>
+    <li><strong><%= roll.name %></strong></li>
+    <li><%= roll.description %></li>
+<% end %>
+</ul>
