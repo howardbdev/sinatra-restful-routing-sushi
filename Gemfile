@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'pry-byebug'
+gem 'rack'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'require_all'
+gem 'sinatra'
+gem 'shotgun'
+gem 'rest-client'
+gem 'sqlite3'
