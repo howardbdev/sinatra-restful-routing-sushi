@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'pry-byebug'
 gem 'rack'
+gem 'rake'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'require_all'
