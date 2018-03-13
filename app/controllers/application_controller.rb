@@ -36,8 +36,14 @@ class ApplicationController < Sinatra::Base
   end
 
   # delete a sushi
+  patch "/sushis/:id" do
+    sushi = Sushi.find(params[:id])
+    sushi.update(name: params[:name], description: params[:description])
+    redirect "/"
+  end
+
+  # delete a sushi
   delete "/sushis/:id" do
-    binding.pry
     @sushi = Sushi.find(params[:id])
     @sushi.delete
     redirect "/"
